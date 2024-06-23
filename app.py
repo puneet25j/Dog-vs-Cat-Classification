@@ -13,16 +13,15 @@ def preprocess_image(uploaded_file):
     img = img.resize((64, 64))  # Resize to the size the model expects
     img_array = image.img_to_array(img)
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
-    img_array = img_array / 255.0  # Scale the image
     return img_array
 
 # Function to make predictions
 def predict_image(img_array):
     prediction = model.predict(img_array)
-    if prediction[0][0] > 0.5:
-        return "Cat 😺"
-    else:
+    if prediction[0][0] == 1:
         return "Dog 🐶"
+    else:
+        return "Cat 😺"
 
 #App title
 favicon = Image.open('favicon.png')
