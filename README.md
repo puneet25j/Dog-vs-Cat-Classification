@@ -1,30 +1,35 @@
 # Dog-Cat Identification
-
 This project utilizes a Convolutional Neural Network (CNN) to classify images of dogs and cats. The model is created in Jupyter Notebook and involves data preprocessing, model building, training, and evaluation.
-
+#### Results
+The final model achieves an accuracy of **92%** on the training dataset. The final model achieves an accuracy of **79%** on the validation dataset.
 ## Table of Contents
+1. [Description](#Description)
+2. [Project Structure](#Project-Structure)
+3. [Libraries Used](#Libraries-Used)
+4. [Steps Involved](#Steps-Involved)
 
 ### Description
-
 This project aims to build a image classification model that can distinguish between images of dogs and cats. The model is trained using a dataset of labeled images and leverages deep learning techniques to achieve high accuracy.
 The project was developed during the process of learning machine learning basics and this was developed during the phase of understanding CNNs.
-### Libraries Used
-* TensorFlow
-* Keras
-* NumPy
-* Streamlit
+
+![App Preview](./demo/sample.PNG)
 
 ### Project Structure
-
-* `dataset\`: Dataset used to train the model. [Dataset]()
+* `dataset\`: Dataset used to train the model. [Dataset](https://drive.google.com/drive/folders/1SeC_c-eqUA1eX0b3zLywAKkQKunG9JJd?usp=sharing)
 * `dog-cat-identification.ipynb` :  Jupyter Notebook containing the code for data preprocessing, model building, training, and evaluation.
 * `dog-cat-identification.py` : Python script for the same purpose.
 * `cnn_model.h5`: Pre-trained model file (Model Saved from above files).
 * `requirements.txt`: List of required dependencies.
 * `favicon.png`: Favicon image for the Streamlit app.
 * `app.py`: Streamlit app for an interactive demo.
-
+### Libraries Used
+* TensorFlow
+* Keras
+* NumPy
+* Streamlit
 ### Steps Involved
+
+![Steps](./demo/process.PNG)
 
 #### Data Preprocessing
 Data preprocessing involves loading containing training and validation sets.
